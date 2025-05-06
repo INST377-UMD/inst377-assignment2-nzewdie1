@@ -1,0 +1,134 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: peachpuff;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: peachpuff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #f0c040;
+}
+
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+
+#audio-controls {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+
+button.custom-btn,
+.home-btn {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow:
+    rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, .15) 0 1px 2px,
+    rgba(44, 187, 99, .15) 0 2px 4px,
+    rgba(44, 187, 99, .15) 0 4px 8px,
+    rgba(44, 187, 99, .15) 0 8px 16px,
+    rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, Roboto, sans-serif;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: none;
+  font-size: 16px;
+  user-select: none;
+}
+
+button.custom-btn:hover,
+.home-btn:hover {
+  box-shadow:
+    rgba(44, 187, 99, .35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, .25) 0 1px 2px,
+    rgba(44, 187, 99, .25) 0 2px 4px,
+    rgba(44, 187, 99, .25) 0 4px 8px,
+    rgba(44, 187, 99, .25) 0 8px 16px,
+    rgba(44, 187, 99, .25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+
+#home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0 20px;
+}
+
+.home-btn {
+  font-size: 1.5em;
+  padding: 20px 40px;
+}
+
+
+#breed-buttons {
+  margin-top: 20px;
+}
+
+#breed-buttons button {
+  margin: 5px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#breed-buttons button:hover {
+  background-color: #45a049;
+}
+
+
+.quote-box {
+  text-align: center;
+  font-size: 1.2em;
+  font-style: italic;
+  margin-top: 20px;
+  padding: 10px;
+}

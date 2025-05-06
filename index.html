@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+  <h1>INST 377 Activities</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Welcome to the Class Activities Website</h1>
+  
+    <div id="home-buttons">
+      <a href="stocks.html" class="home-btn">Stocks</a>
+      <a href="dogs.html" class="home-btn">Dogs</a>
+    </div>
+  
+    <div id="quote" class="quote-box"></div>
+  </main>
+
+  <div id="audio-controls">
+    <h2>In this webpage, there are options to Navigate with Audio!</h2>
+    <p>Say "Hello", "Change the color to green", or "Navigate to stocks/dogs/home"</p>
+    <button onclick="startAudio()">Turn On Audio</button>
+    <button onclick="stopAudio()">Turn Off Audio</button>
+  </div>
+
+  <script>
+  
+    fetch('https://zenquotes.io/api/random')
+      .then(res => res.json())
+      .then(data => {
+        const quoteData = data[0];
+        document.getElementById('quote').innerText = `\"${quoteData.q}\" — ${quoteData.a}`;
+      })
+      .catch(err => console.error('Error fetching quote:', err));
+  </script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

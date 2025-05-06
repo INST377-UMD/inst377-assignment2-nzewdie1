@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dogs</title>
+  <link rel="stylesheet" href="/style.css" />
+
+  
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-slider@1.0.0/dist/simple-slider.css" />
+
+  <style>
+   
+    
+    .custom-btn {
+      margin: 5px;
+      padding: 10px 15px;
+      border: none;
+      background-color: #3498db;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .custom-btn:hover {
+      background-color: #2980b9;
+    }   
+ 
+
+    #dog-carousel {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .carousel-img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+  .slider {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Dog Page</h1>
+
+    
+    <div class="slider" id="dog-carousel"></div>
+
+
+    
+
+   
+    <h2>Dog Breeds</h2>
+    <div id="breed-buttons"></div>
+
+   
+    <div id="breed-info">
+      <h3 id="breed-name"></h3>
+      <p><strong>Description:</strong> <span id="breed-description"></span></p>
+      <p><strong>Lifespan:</strong> <span id="breed-lifespan"></span></p>
+    </div>
+  </main>
+
+  
+  <div id="audio-controls">
+    <h2>Audio Commands</h2>
+    <p>Say "Hello", "Change the color to red", "Navigate to stocks"</p>
+    <p>Say "Load Dog Breed Golden Retriever" to show breed info</p>
+    <button onclick="startAudio()">Turn On Audio</button>
+    <button onclick="stopAudio()">Turn Off Audio</button>
+  </div>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/simple-slider@1.0.0/dist/simple-slider.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+
+  
+  <script src="/dogs.js"></script>
+  
+</body>
+</html>
